@@ -1,0 +1,123 @@
+<style type="text/css">
+* {
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  font-family: arial;
+}
+.main {
+  margin: 2%;
+}
+
+.card {
+  width: 20%;
+  display: inline-block;
+  box-shadow: 2px 2px 20px black;
+  border-radius: 5px;
+  margin: 2%;
+  grid-template-columns: repeat(2, 1fr);
+  background-color: pink;
+  border-color: yellow;
+}
+
+.image img {
+  width: 100%;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
+
+.title {
+  text-align: center;
+  padding: 10px;
+}
+
+
+.des {
+  padding: 3px;
+  text-align: center;
+
+  padding-top: 10px;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+button {
+  margin-top: 40px;
+  margin-bottom: 10px;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 10px;
+}
+button:hover {
+  background-color: black;
+  color: white;
+  transition: 0.5s;
+  cursor: pointer;
+}
+button{
+  background-color:hotpink;
+  border-color: royalblue;
+  border-radius: 25%;
+}
+
+body  {
+  background-image: url("sweets2.jpg");
+  background-color: #cccccc;
+}
+
+.myDiv {
+  
+  background-color: pink;    
+  text-align: center;
+  padding: 20px;
+  width: 60%;
+  margin: 20px;
+  
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: white;
+}
+
+.flip-card-back {
+  background-color: rgb(228, 4, 4);
+  color: black;
+  transform: rotateY(180deg);
+  align-content: center;
+}
+
